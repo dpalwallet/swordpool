@@ -1,4 +1,4 @@
-# swardpool rule beta
+# swordpool rule beta
 
 ## 该规则仅用于 swardpool 池子 beta 测试，池子交易只用于技术研发测试
 ## 测试期间会随时调整维护，请注意公告（请注意风险，测试期间可能会出现问题）
@@ -13,7 +13,7 @@
 * 池子会初始化一定比例的余额（测试期间由社区志愿提供，提出时按当前池子余额和投入的比例计算），后期会加上自由加入池子的功能。
 * 池子目前只用于beta测试，所以池子余额相对较少
 
-# Swardpool Rule (Beta Version)
+# Swordpool Rule (Beta Version)
 ## This rule is exclusively for the Swardpool beta testing. Pool transactions are intended solely for technical research and development testing purposes.
 ## Rule adjustments and maintenance may occur at any time during the testing period, so please pay attention to announcements (please be aware of the risks, as issues may arise during the testing phase).
 
