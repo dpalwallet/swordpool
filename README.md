@@ -9,6 +9,7 @@
 * 余额以区块计算，每个区块都会根据交易情况计算实时余额，兑换数量按交易的区块余额计算价格（公式参考uniswap的合约，但是要扣除doge网络的手续费也就是gas）
 * 池子会初始化一定比例的余额（测试期间由社区志愿提供，提出时按当前池子余额和投入的比例计算），后期会加上自由加入池子的功能。
 * 池子目前只用于beta测试，所以池子余额相对较少
+* 请注意，余额是随区块变化的，而前台显示无法测算你的交易在哪个区块确认，所以价格显示会有差异，请注意，投资有风险！！！
 
 # Swordpool Rule (Beta Version)
 ## This rule is exclusively for the Swardpool beta testing. Pool transactions are intended solely for technical research and development testing purposes.
@@ -22,4 +23,5 @@ Individual transactions cannot exceed 50% of the pool, and exceeding this limit 
 Balances are calculated based on blocks, with each block calculating the actual balance based on transaction activity. Exchange quantities are calculated based on the block balance of transactions.
 * The pool will initialize a certain proportion of balances (provided by community volunteers during the testing period, calculated based on the current pool balance and the contribution ratio). Additional functionality for freely joining the pool will be added in the future.
 * The pool is currently only used for beta testing, so the pool balance is relatively low.
+* Please note that the balance fluctuates with the blocks, and the front-end display cannot determine the confirmation of your transaction in a particular block. Therefore, there might be discrepancies in price display. Please be aware, investment carries risks!!!
 
