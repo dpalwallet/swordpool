@@ -1,8 +1,6 @@
 # swordpool rule beta
 
-# before u swap see this 
-https://dogim.gitbook.io/dogim/
-
+# before u swap check this https://dogim.gitbook.io/dogim/
 
 
 * 往池子规定的地址，转池子定义的drc20或者doge的交易会被识别为交易行为
