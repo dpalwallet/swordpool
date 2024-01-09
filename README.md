@@ -5,7 +5,7 @@
 * We tested two models and ultimately abandoned the model that generated interest from liquidity. Instead, we adopted another buy/sell model.
 * For instance, if I have confidence in a certain token A and am less optimistic about token B in my possession, I will inject token B into the pool. This way, when the price of A increases, I will be able to acquire more A because I attract more people to buy B, and the pool does not charge a 1% fee at that time.
 * The system sets a removal operation to be executed after 360 blocks.
-* The calculation formula is x * (current_balance_a / current_balance_b). Compared to other models, this may result in uncompensated losses. Similarly, this type of model carries the risk of overselling but promotes the frequency of trading.
+* The calculation formula is x * (current_balance_a / current_balance_b). Compared to other models, this may not result in uncompensated losses. But, this type of model carries the risk of overselling but promotes the frequency of trading.
 * When you decide to withdraw your earnings, it will be calculated based on the current balance and the formula mentioned above. However, there is a risk of overselling, for example, when the balance of token A in the pool is insufficient to provide the profits you could gain, at which point you will be unable to withdraw.
 * Please remember that the liquidity you provide has a 360-block time limit, and you will only receive the opposing token. For example, if you add liquidity with token B to acquire token A.
 * Please be aware that when you engage in trading, you are confirming your acceptance of our rules. In the event of any significant short-term fluctuations, you assume the risk.
