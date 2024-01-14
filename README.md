@@ -5,7 +5,7 @@
 * We tested two models and ultimately abandoned the model that generated interest from liquidity. Instead, we adopted another buy/sell model.
 * For instance, if I have confidence in a certain token A and am less optimistic about token B in my possession, I will inject token B into the pool. This way, when the price of A increases, I will be able to acquire more A because I attract more people to buy B, and the pool does not charge a 1% fee at that time.
 * The system sets a removal operation to be executed after 360 blocks.
-* The calculation formula is x * (current_balance_a / current_balance_b). Compared to other models, this may not result in uncompensated losses. But, this type of model carries the risk of overselling but promotes the frequency of trading.
+* The calculation formula is remove_amount_b * (current_balance_a / current_balance_b). Compared to other models, this may not result in uncompensated losses. But, this type of model carries the risk of overselling but promotes the frequency of trading.
 * When you decide to withdraw your earnings, it will be calculated based on the current balance and the formula mentioned above. However, there is a risk of overselling, for example, when the balance of token A in the pool is insufficient to provide the profits you could gain, at which point you will be unable to withdraw.
 * Please remember that the liquidity you provide has a 360-block time limit, and you will only receive the opposing token. For example, if you add liquidity with token B to acquire token A.
 * Please be aware that when you engage in trading, you are confirming your acceptance of our rules. In the event of any significant short-term fluctuations, you assume the risk.
@@ -18,7 +18,7 @@
 * 我们测试了两种模型，最终抛弃了添加流动性产生利息的模型。取而代之的是另外一种买/卖模型
 * 例如 我看好某个代币 A 不看好我手中的 B ，为此我将代币 B 注入池子，这样当 A 的价格升高后，我将可以换得更多的 A，因为我让更多人去买B，并且此时池子不在收取 1% 手续费用。
 * 此时系统设定了 360 个区块后执行移除操作。
-* 计算公式为 x * (current_balance_a / current_balance_b) , 相比于其他模型会产生无偿损失，同样的这类模型也有超卖的风险，但会促进交易发生的频率
+* 计算公式为 remove_amount_b * (current_balance_a / current_balance_b) , 相比于其他模型会产生无偿损失，同样的这类模型也有超卖的风险，但会促进交易发生的频率
 * 当你决定回收利益的时候，会按照当前余额及以上公式计算所得，但是会出现超卖的风险，例如池中的代币 a 余额不足以提供你所能获得的收益时，此时你将无法撤出
 * 请记住你提供的流动性有360个区块时限并且只会收到对手代币，例如 你添加流动性 b 是为了获得 a
 * 请注意当你进行交易时证明你同意了我们的规则，出现任何短期内的剧烈波动，请自担风险
